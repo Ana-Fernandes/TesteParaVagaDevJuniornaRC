@@ -20,8 +20,9 @@ Cadastro e login de usuários
 
 Gerenciamento de produtos (CRUD)
 
-Filtragem de produtos por categoria e preço
+Filtragem de produtos 
 
+Design moderno com conceito affordance
 🚀 Como Executar
 Backend:
 cd backend
