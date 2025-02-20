@@ -1,0 +1,313 @@
+/* Estilos Globais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+.banner-carousel {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.banner-carousel img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Header */
+.header {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Menu Esquerdo */
+.menu-left ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.menu-left ul li {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.menu-left ul li:hover {
+  color: #007BFF;
+}
+
+/* Logo Central */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo img {
+  max-height: 100px;
+  cursor: pointer;
+}
+
+/* Menu Direito */
+.menu-right {
+  display: flex;
+  align-items: center;
+}
+
+.menu-right ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.menu-right ul li {
+  font-size: 16px;
+  font-weight: 500;
+  color: #3d3d3d;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.menu-right ul li:hover {
+  color: #007BFF;
+}
+
+
+
+/* Seção de Eventos */
+.events-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.event-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.event-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-card h3 {
+  margin: 15px 0 5px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.event-card p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+
+/* Estilos para o rodapé */
+.footer {
+  background-color: #1e7cda; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .footer-container .footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer .footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer .footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer .footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espaçamento entre os ícones */
+  margin-top: 10px;
+}
+
+.footer .social-icons a {
+  color: white; /* Cor padrão dos ícones */
+  font-size: 24px; /* Tamanho dos ícones */
+  transition: color 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+.footer .social-icons a:hover {
+  color: #2350a3; /* Cor dos ícones ao passar o mouse */
+}
+
+
+.footer .copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .event-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .event-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .buy-button {
+    font-size: 16px;
+  }
+}
+
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .new-banner img {
+    width: 100%; /* Ajusta a imagem para 100% da tela em dispositivos móveis */
+    max-width: none; /* Remove o limite máximo de largura */
+  }
+}
+
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  /* Para telas entre 768px e 1024px, ajusta o grid para 3 colunas */
+  .events-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .carousel {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Para telas entre 480px e 768px, ajusta o grid para 2 colunas */
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .carousel {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Para telas menores que 480px, ajusta o grid para 1 coluna */
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel {
+    height: 200px;
+  }
+  
+  /* Ajustes ainda mais agressivos para telas muito pequenas */
+  .seja-produtor h2 {
+    font-size: 28px; /* Tamanho bem menor do título */
+  }
+
+  .seja-produtor p {
+    font-size: 14px; /* Tamanho bem menor do subtítulo */
+  }
+
+  .produtor-button {
+    font-size: 16px; /* Tamanho ainda menor do botão */
+    padding: 10px 25px; /* Menor padding no botão */
+  }
+  .header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header .search-bar {
+    max-width: 90%;
+  }
+
+  .header .buttons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .header .buttons button {
+    width: 100%;
+  }
+}

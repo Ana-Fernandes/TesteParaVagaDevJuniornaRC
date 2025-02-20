@@ -1,0 +1,133 @@
+/* Estilo principal da página */
+.contact-page-wrapper {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho e menu */
+.header-contact {
+  background-color: #ffffff;
+  color: #0f6ac5;
+  padding: 35px 0;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #0f6ac5;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover, .navbar a.active {
+  background-color: #dadadb;
+}
+
+/* Container principal */
+.contact-container {
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Informações de contato */
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+}
+
+.contact-details {
+  flex: 1 1 45%;
+}
+
+.contact-details h2 {
+  font-size: 52px;
+  color: #25323F;
+  margin-bottom: 70px;
+}
+
+.contact-details p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-details .contact-icon {
+  margin-right: 10px;
+  color: #25323F;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  font-size: 28px;
+  color: #25323F;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #dadcdd;
+}
+
+/* Imagem */
+.image-container {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.contact-image:hover {
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-details, .image-container {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+}
